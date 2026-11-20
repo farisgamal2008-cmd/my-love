@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-widthinitial-scale=1">
+<meta name="theme-color" content="#160d1b">
+<title>A Story Called Malak ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700&display=swap');
+:root{--bg:#100b16;--panel:#1b1220;--pink:#e9b9cf;--rose:#c77d9d;--gold:#d9bd8d;--cream:#fff1f5;--muted:#c9b6c3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#352038 0,#160f1b 38%,#0c0911 100%);color:var(--cream);font-family:'Cairo',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(1px 1px at 12% 20%,#fff 99%,transparent),radial-gradient(1px 1px at 77% 13%,#f6cfe0 99%,transparent),radial-gradient(1px 1px at 48% 65%,#fff 99%,transparent),radial-gradient(1px 1px at 88% 76%,#fff 99%,transparent),radial-gradient(1px 1px at 25% 85%,#f6cfe0 99%,transparent);background-size:240px 220px;z-index:-1}
+a{color:inherit}.serif{font-family:'Amiri',serif}.eyebrow{letter-spacing:3px;color:var(--gold);font-size:.72rem;text-transform:uppercase}.section{padding:100px 22px;max-width:1050px;margin:auto}.center{text-align:center}.muted{color:var(--muted)}.gold{color:var(--gold)}
+#intro{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px 20px;position:relative;overflow:hidden}
+#intro:before{content:"";position:absolute;width:min(80vw,650px);height:min(80vw,650px);border-radius:50%;background:radial-gradient(circle,#d58aab22 0,#9e668022 34%,transparent 70%);filter:blur(8px)}
+.intro-inner{position:relative;max-width:760px;animation:rise 1.4s ease both}.moon{width:90px;height:90px;border-radius:50%;margin:0 auto 30px;background:radial-gradient(circle at 35% 35%,#fff7f5,#e8b9cf 52%,#b87c9a 100%);box-shadow:0 0 55px #e6b5d866,0 0 130px #d28aa633}
+h1{font-family:'Amiri',serif;font-size:clamp(3.2rem,10vw,6.8rem);font-weight:400;line-height:1;margin:10px 0;color:#fff2f6;text-shadow:0 0 32px #e8b9cf44;direction:ltr}
+.subtitle{font-family:'Amiri',serif;font-size:clamp(1.25rem,3.5vw,1.8rem);color:var(--pink);margin:18px 0 30px}
+.btn{border:1px solid #d9bd8d99;background:linear-gradient(135deg,#d9bd8d,#b9859b);color:#1b101b;padding:13px 27px;border-radius:99px;font:600 1rem 'Cairo';cursor:pointer;box-shadow:0 8px 30px #0005;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 36px #d9bd8d33}.hint{font-size:.8rem;color:#c9b6c3;margin-top:18px}
+.floating{position:absolute;color:#e9b9cf88;animation:float 8s ease-in-out infinite;font-size:22px}.f1{top:18%;left:12%}.f2{top:30%;right:13%;animation-delay:2s}.f3{bottom:17%;left:22%;animation-delay:4s}
+@keyframes float{50%{transform:translateY(-25px) rotate(15deg);opacity:1}}@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+nav{position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:25px;padding:13px 12px;background:#100b16c9;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
+nav a{text-decoration:none;color:#dfcbd5;font-size:.82rem}nav a:hover{color:var(--gold)}
+.hidden{display:none!important}.section-title{font:400 clamp(2.2rem,6vw,3.5rem) 'Amiri';color:var(--pink);margin:8px 0 12px}.lead{max-width:650px;margin:0 auto;color:var(--muted);line-height:2}
+.music-card{max-width:540px;margin:35px auto 0;padding:24px;border:1px solid #d9bd8d44;border-radius:24px;background:linear-gradient(145deg,#ffffff0d,#ffffff04);box-shadow:0 20px 70px #0004}
+.disc{width:115px;height:115px;margin:0 auto 18px;border-radius:50%;background:radial-gradient(circle,#d8b9c9 0 8%,#261927 9% 18%,#b67c98 19% 21%,#241725 22% 100%);border:5px solid #d9bd8d66;box-shadow:0 0 35px #d9bd8d22;position:relative}
+.disc:after{content:"♡";position:absolute;inset:0;display:grid;place-items:center;color:#fce9f1;font-size:27px}.playing{animation:spin 5s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.player-row{display:flex;align-items:center;justify-content:center;gap:14px}.round{width:46px;height:46px;border-radius:50%;border:0;background:var(--gold);color:#211521;font-size:18px;cursor:pointer}
+.track{font-size:.9rem;color:#f5dce7}.small{font-size:.75rem;color:var(--muted);margin-top:6px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}
+.photo{margin:0;border-radius:18px;overflow:hidden;background:#241927;border:1px solid #ffffff1a;box-shadow:0 12px 35px #0005;position:relative}
+.photo img{width:100%;height:340px;object-fit:cover;display:block;transition:transform .6s}.photo:hover img{transform:scale(1.045)}
+.photo:nth-child(2n){transform:translateY(24px)}.photo figcaption{position:absolute;bottom:0;inset-inline:0;padding:25px 12px 12px;background:linear-gradient(transparent,#120b16c9);font:1.2rem 'Amiri';color:#fff}
+.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:35px}.video-grid video{width:100%;border-radius:18px;border:1px solid #ffffff1c;background:#08070a;box-shadow:0 12px 35px #0005}
+.letter{max-width:760px;margin:35px auto 0;padding:clamp(24px,5vw,48px);background:linear-gradient(145deg,#fff9 0,#fff4 100%);color:#382435;border-radius:5px 22px 5px 22px;box-shadow:0 25px 75px #0006;position:relative}
+.letter:before{content:"";position:absolute;inset:10px;border:1px solid #b9859b66;border-radius:3px 16px 3px 16px;pointer-events:none}
+.letter h3{font:700 2rem 'Amiri';color:#8d526f;margin:0 0 15px}.letter p{font:1.12rem/2.25 'Amiri';margin:0 0 12px}
+.final{min-height:75vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 22px;background:radial-gradient(ellipse at center,#542b493b,transparent 70%)}
+.final h2{font:400 clamp(2.8rem,8vw,5rem) 'Amiri';color:#f4cddd;margin:12px 0}.final p{max-width:650px;margin:0 auto;color:#e0cbd5;line-height:2.2}
+footer{text-align:center;padding:25px;color:#9e8999;font-size:.75rem;border-top:1px solid #ffffff12}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:700px){.section{padding:75px 18px}.gallery{grid-template-columns:repeat(2,1fr);gap:10px}.photo img{height:260px}.photo:nth-child(2n){transform:none}.video-grid{grid-template-columns:1fr}nav{gap:13px}nav a{font-size:.72rem}}
+@media(max-width:390px){.gallery{grid-template-columns:1fr}.photo img{height:390px}}
+
+.first-day{max-width:760px;margin:38px auto 0;padding:30px 24px;border:1px solid #d9bd8d55;border-radius:24px;background:linear-gradient(145deg,#ffffff10,#ffffff04);box-shadow:0 20px 70px #0004;position:relative;overflow:hidden}
+.first-day:before{content:"♡";position:absolute;left:18px;top:8px;font:5rem 'Amiri';color:#e9b9cf18}
+.first-date{display:inline-block;padding:7px 17px;border:1px solid #d9bd8d77;border-radius:99px;color:var(--gold);font-size:.9rem;letter-spacing:1px;margin:12px 0 18px}
+.first-day p{max-width:600px;margin:0 auto;color:#e8d5df;line-height:2.2;font:1.15rem/2.2 'Amiri'}
+.first-day .little-note{margin-top:18px;color:var(--pink);font:1.35rem 'Amiri'}
+</style>
+</head>
+<body>
+<section id="intro">
+ <span class="floating f1">✧</span><span class="floating f2">♡</span><span class="floating f3">✦</span>
+ <div class="intro-inner">
+  <div class="moon"></div><div class="eyebrow">كنتي فاكراني ناسي ... بس مقدرش</div>
+  <h1>A Story Called Malak</h1>
+  <div class="subtitle">كل سنة وإنتي طيبة يا ملاك قلبي … دي حاجة صغيرة من قلبي ليكي ♡</div>
+  <button class="btn" id="openGift">افتحي اللي عملتهولك ♡</button>
+  <div class="hint">دوسي هنا… عايز أقولك حاجات كتير</div>
+ </div>
+</section>
+<main id="main" class="hidden">
+<nav><a href="#first-day">أول يوم</a><a href="#song">أغنيتنا</a><a href="#memories">ذكرياتنا</a><a href="#moments">حاجات فاكرها</a><a href="#letter">كلام مني ليكي</a></nav>
+
+<section class="section center reveal" id="first-day">
+ <div class="eyebrow">THE DAY OUR STORY BEGAN</div>
+ <h2 class="section-title">فاكرة أول مرة اتقابلنا؟ ♡</h2>
+ <p class="lead">20 سبتمبر 2025… اليوم اللي بدأ منه كل ده.</p>
+ <div class="first-day">
+  <div class="eyebrow">A DATE I WILL ALWAYS REMEMBER</div>
+  <div class="first-date">20 / 09 / 2025</div>
+  <p>اليوم ده بالنسبالي مش يوم عادي يا ملك. ده أول يوم شوفتك فيه وأول يوم بدأت فيه حكايتنا تاخد شكل مختلف. يمكن وقتها مكنتش أعرف إن اليوم ده هيفضل في بالي بالشكل ده وإنك هتبقي الشخص اللي ليه كل المكانة دي عندي.</p>
+  <p style="margin-top:14px">كل ما بفتكر إن أول مرة اتقابلنا كانت في اليوم ده بحس إن فيه تواريخ بتفضل محفورة جوانا مهما عدى وقت. وأنا عمري ما هنسى إن يوم 20/9/2025 كان بداية حاجة مميزة بالنسبالي.</p>
+  <div class="little-note">ومن اليوم ده بدأت حكايتنا… ولسه نفسي نكملها سوا ❤️</div>
+ </div>
+</section>
+
+<section class="section center reveal" id="song">
+ <div class="eyebrow">الأغنية اللي بتفكرني بيكي</div><h2 class="section-title">اعتبريها أغنيتنا… اسمعيها معايا ♡</h2>
+ <p class="lead">مش عارف إنتي بتحسي بإيه لما بتسمعيها بس أنا كل ما بسمعها بفتكرك وبفتكر حاجات كتير بينا.</p>
+ <div class="music-card">
+  <div class="disc" id="disc"></div>
+  <div class="track">الأغنية دي ليها حكاية عندي</div><div class="small">كل نغمة فيها بتفكرني بحاجة</div>
+  <div class="player-row" style="margin-top:18px"><button class="round" id="playBtn" aria-label="تشغيل">▶</button><span class="small" id="musicState">دوسي تشغيل واسمعيها</span></div>
+  <audio id="songAudio" preload="metadata"><source src="assets/music/our-song.mp3" type="audio/mpeg"></audio>
+ </div>
+</section>
+<section class="section center reveal" id="memories">
+ <div class="eyebrow">حاجات من حكايتنا</div><h2 class="section-title">كل صورة وراها حكاية</h2>
+ <p class="lead">يمكن الصور حاجات فاكرها صغيرة… بس كل واحدة فيهم شايلة إحساس وذكرى ليها مكانها.</p>
+ <div class="gallery" id="gallery"></div>
+</section>
+<section class="section center reveal" id="moments">
+ <div class="eyebrow">فاكر اللحظات دي كويس</div><h2 class="section-title">حاجات فاكرها عايز أفضل فاكرها</h2>
+ <p class="lead">شوية حاجات فاكرها من حكايتنا… خدي وقتك واتفرجي عليهم براحتك.</p>
+ <div class="video-grid" id="videos"></div>
+</section>
+<section class="section reveal" id="letter">
+ <div class="center"><div class="eyebrow">كلام كان جوايا وعايز أقولهولك</div><h2 class="section-title">في كلام كتير نفسي أقولهولك</h2></div>
+ <article class="letter">
+  <h3>يا روحي… ❤️</h3>
+  <p>كل سنة وإنتي طيبة يا حبيبتي ويا رب السنة دي تكون حلوة وتحققي فيها كل اللي نفسك فيه.</p>
+  <p>عارفة؟ أنا ساعات بقعد أفكر في اللي بينا وبستغرب إزاي مهما بعدنا ومهما كل واحد فينا راح في طريق وبعد ما بنكون قلبنا على بعض بنرجع نتقابل تاني. مش عارف أسمي ده إيه غير إن حكايتنا مختلفة وإن كل مرة القدر بيجمعنا من جديد بحس إن لسه فيه حاجة حلوة مستنيانا.</p>
+  <p>أنا فعلًا بحبك وبشوفك مختلفة عن أي حد. ليكي مكان عندي مش شبه مكان حد تاني وده مش معناه إن مفيش حاجات بتضايقني أو إننا عمرنا ما هنختلف. بالعكس فيه حاجات ساعات بتزعلني ويمكن فيه تصرفات بتوجعني بس لسه عندي أمل إننا نفهم بعض أكتر وإن الحاجات دي تتغير مع الوقت عشان خاطر بعض وعشان نكون مرتاحين وإحنا مع بعض.</p>
+  <p>أنا مش عايزك تتغيري وتبقي حد تاني أنا بس نفسي نبقى أحسن لبعض. نفسي لما حاجة تضايقني أقدر أقولك وتسمعيني ولما حاجة تضايقك تلاقيني سامعك ونفضل نحاول بدل ما كل واحد فينا يشيل جواه.</p>
+  <p>وحشتيني جدًا… وحشني كلامك وتفاصيلك ووجودك في يومي حتى الحاجات الصغيرة اللي يمكن وقتها مكنتش بديها حقها. وحشني إحساس إنك قريبة مني وإن أقدر أحكيلك على يومي وأشاركك حاجات كتير.</p>
+  <p>وفرحان إننا رجعنا وعندي أمل بجد إن المرة دي نعرف نعمل حاجة أحلى من الأول. مش عايزنا نرجع لمجرد إننا وحشنا بعض وبس؛ نفسي نرجع وإحنا فاهمين أكتر ومقدّرين بعض أكتر وعارفين إن العلاقة دي محتاجة مننا إحنا الاتنين نحافظ عليها.</p>
+  <p>مش هقولك إن كل حاجة هتبقى سهلة أو إننا مش هنختلف بس أقدر أقولك إني نفسي أحاول معاكي وأدي للي بينا فرصة حقيقية ونبني ذكريات جديدة أحلى من اللي فاتت.</p>
+  <p>النهارده يومك ونفسي تفضلي مبسوطة وضحكتك منورة وشايفة نفسك بعينيّ: حد غالي ومختلف ويستاهل كل حاجة حلوة.</p>
+  <p>كل سنة وإنتِ حبيبتي يا ملك. بحبك ووحشتيني ونفسي اللي جاي لينا يكون أحلى بكتير. ❤️</p>
+  <p style="text-align:left;margin-top:25px;color:#8d526f">— فارس</p>
+ </article>
+</section>
+<section class="final reveal">
+ <div><div class="eyebrow">لسه عندي أمل في اللي جاي</div><h2>نفسي اللي جاي يكون أحلى من اللي فات</h2>
+ <p>أنا مش مستني مننا نكون مثاليين بس نفسي نحاول ونفهم بعض ونراعي بعض أكتر. عندي أمل كبير إننا نقدر نعمل أيام أحلى من اللي فاتت وإننا المرة دي نختار نكمل بإيدينا.<br>كل سنة وإنتِ طيبة يا ملك… بحبك. ♡</p>
+ <div style="margin-top:30px;color:var(--gold);font:2rem 'Amiri'">ونفسي نفضل نختار بعض كل يوم ✧</div>
+ </div>
+</section>
+<footer>Made with all the love, Malak… from Faris ♡</footer>
+</main>
+<script>
+const photos = ["malak-01.jpeg", "malak-02.jpeg", "malak-03.jpeg", "malak-04.jpeg", "malak-05.jpeg", "malak-06.jpeg"];
+const videos = ["memory-01.mp4", "memory-02.mp4", "memory-03.mp4", "memory-04.mp4", "memory-05.mp4", "memory-06.mp4", "memory-07.mp4", "memory-08.mp4"];
+const gallery=document.getElementById('gallery');
+photos.forEach((src,i)=>{const fig=document.createElement('figure');fig.className='photo';const img=document.createElement('img');img.src='assets/photos/'+src;img.alt='ذكرى جميلة';img.loading='lazy';const cap=document.createElement('figcaption');cap.textContent=i===0?'دي من الصور اللي بعشقها':i===photos.length-1?'اول صورة لينا سوا':'شايفة القمر؟';fig.append(img,cap);gallery.append(fig)});
+const videoBox=document.getElementById('videos');
+videos.forEach((src,i)=>{const v=document.createElement('video');v.src='assets/videos/'+src;v.controls=true;v.preload='metadata';v.playsInline=true;v.setAttribute('aria-label','ذكرى فيديو '+(i+1));videoBox.append(v)});
+const open=document.getElementById('openGift'),main=document.getElementById('main');
+open.addEventListener('click',()=>{main.classList.remove('hidden');document.getElementById('song').scrollIntoView({behavior:'smooth'});});
+const audio=document.getElementById('songAudio'),play=document.getElementById('playBtn'),disc=document.getElementById('disc'),state=document.getElementById('musicState');
+play.addEventListener('click',async()=>{if(audio.paused){try{await audio.play();play.textContent='Ⅱ';disc.classList.add('playing');state.textContent='اتمنى تحسي باللي بحسه';}catch(e){state.textContent='حصلت مشكلة في تشغيل الأغنية';}}else{audio.pause();play.textContent='▶';disc.classList.remove('playing');state.textContent='متوقفة مؤقتًا';}});
+audio.addEventListener('ended',()=>{play.textContent='▶';disc.classList.remove('playing');state.textContent='انتهت الأغنية ♡'});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
